@@ -3,11 +3,11 @@ function returnRandomNumber() {
 }
 
 function operateRandomNumber(num, operation) {
-    // Número aléatorio entre 0 e 100
-    const randomNumber = Math.round(returnRandomNumber() * 100);
-    const result = operation(randomNumber, num);
+  // Número aléatorio entre 0 e 100
+  const randomNumber = Math.round(returnRandomNumber() * 100);
+  const result = operation(randomNumber, num);
 
-    return `Seu número é ${result}!`;
+  return `Seu número é ${result}!`;
 }
 
 // Para não estragarmos a interface publica, recriamos os metodos antigos com a nova mudança
